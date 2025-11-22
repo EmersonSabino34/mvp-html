@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StoryMagic – Novo Story</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-gray-100 flex min-h-screen text-gray-800">
+    <!-- SIDEBAR -->
+    <aside
+      class="bg-purple-600 text-white w-72 p-6 space-y-6 fixed h-full hidden md:block"
+    >
+      <h1 class="text-4xl font-extrabold">StoryMagic</h1>
+
+      <nav class="space-y-2">
+        <a
+          href="dashboard.html"
+          class="block py-3 px-4 rounded-lg hover:bg-white/20"
+          >Dashboard</a
+        >
+        <a
+          href="novo-story.html"
+          class="block py-3 px-4 rounded-lg bg-white/20 font-semibold"
+          >+ Novo Story</a
+        >
+        <a
+          href="biblioteca.html"
+          class="block py-3 px-4 rounded-lg hover:bg-white/20"
+          >Biblioteca</a
+        >
+        <a
+          href="meus-stories.html"
+          class="block py-3 px-4 rounded-lg hover:bg-white/20"
+          >Meus Stories</a
+        >
+        <a
+          href="perfil.html"
+          class="block py-3 px-4 rounded-lg hover:bg-white/20"
+          >Perfil</a
+        >
+      </nav>
+    </aside>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button
+      class="md:hidden fixed top-4 left-4 bg-purple-600 text-white p-3 rounded-xl shadow-lg"
+      onclick="document.getElementById('mobileMenu').classList.toggle('hidden')"
+    >
+      ☰
+    </button>
+
+    <!-- MOBILE SIDEBAR -->
+    <aside
+      id="mobileMenu"
+      class="bg-purple-600 text-white w-64 p-6 fixed h-full top-0 left-0 z-50 hidden md:hidden"
+    >
+      <h1 class="text-3xl font-extrabold mb-6">StoryMagic</h1>
+
+      <nav class="space-y-2">
+        <a class="block py-3 px-4 rounded-lg hover:bg-white/20">Dashboard</a>
+        <a class="block py-3 px-4 rounded-lg bg-white/20 font-semibold"
+          >+ Novo Story</a
+        >
+        <a class="block py-3 px-4 rounded-lg hover:bg-white/20">Biblioteca</a>
+        <a class="block py-3 px-4 rounded-lg hover:bg-white/20"
+          >Meus Stories</a
+        >
+        <a class="block py-3 px-4 rounded-lg hover:bg-white/20">Perfil</a>
+      </nav>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="md:ml-72 w-full p-6 md:p-12">
+      <h1 class="text-4xl md:text-5xl font-bold">
+        Crie seu story em 1 clique
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 mt-4 mb-10">
+        Cole o texto, fale no microfone ou escolha um template abaixo → a IA faz
+        o resto em 12 segundos.
+      </p>
+
+      <!-- TEXT INPUT -->
+      <textarea
+        class="w-full h-48 p-6 rounded-xl border-2 border-gray-300 text-lg focus:ring-4 focus:ring-purple-300 focus:border-purple-500 transition"
+        placeholder="Ex: Quero vender meu curso de emagrecimento..."
+      ></textarea>
+
+      <!-- BUTTON -->
+      <button
+        class="w-full bg-green-500 hover:bg-green-600 text-white font-bold text-xl py-4 mt-6 rounded-xl shadow-md transition transform hover:scale-[1.02]"
+      >
+        GERAR 15 STORIES MÁGICOS AGORA ✨
+      </button>
+
+      <!-- TEMPLATES -->
+      <h2 class="text-2xl font-bold mt-12 mb-6">
+        Ou escolha um template viral pronto
+      </h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- TEMPLATE -->
+        <div
+          class="rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition"
+        >
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1611162617213-b2e2d8bef5c1?w=400"
+              class="w-full"
+            />
+            <p
+              class="absolute bottom-0 w-full bg-black/60 text-white text-center py-2"
+            >
+              Oferta 24h
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition"
+        >
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1556742111-a301076d9d41?w=400"
+              class="w-full"
+            />
+            <p
+              class="absolute bottom-0 w-full bg-black/60 text-white text-center py-2"
+            >
+              Depoimento Real
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition"
+        >
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400"
+              class="w-full"
+            />
+            <p
+              class="absolute bottom-0 w-full bg-black/60 text-white text-center py-2"
+            >
+              Antes x Depois
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="rounded-2xl overflow-hidden shadow-lg cursor-pointer hover:scale-105 transition"
+        >
+          <div class="relative">
+            <img
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400"
+              class="w-full"
+            />
+            <p
+              class="absolute bottom-0 w-full bg-black/60 text-white text-center py-2"
+            >
+              Bastidores
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

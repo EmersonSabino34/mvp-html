@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perfil – StoryMagic</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>:root{--p:#7C3AED;--g:#10B981}body{font-family:'Inter',sans-serif;background:#f8f9fc;display:flex;min-height:100vh}
+.sidebar{width:280px;background:var(--p);color:white;padding:30px 20px;position:fixed;height:100%}.sidebar .logo{font-size:32px;font-weight:900;margin-bottom:50px}
+.sidebar a{display:block;padding:14px 20px;border-radius:12px;margin:8px 0;color:rgba(255,255,255,0.9)}
+.sidebar a:hover,.sidebar a.active{background:rgba(255,255,255,0.2)}
+.main{margin-left:280px;padding:40px;max-width:800px}
+.card{background:white;border-radius:20px;padding:40px;box-shadow:0 15px 40px rgba(0,0,0,0.08);margin-bottom:30px}
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo">StoryMagic</div>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="novo-story.html">+ Novo Story</a>
+  <a href="biblioteca.html">Biblioteca</a>
+  <a href="meus-stories.html">Meus Stories</a>
+  <a href="perfil.html" class="active">Perfil</a>
+</div>
+
+<div class="main">
+  <h1 style="font-size:42px;">Meu perfil & assinatura</h1>
+
+  <div class="card">
+    <h2>Plano atual: <strong style="color:var(--g)">Pro – R$23,90/mês</strong></h2>
+    <p>Próximo cobrança: 15/dez/2025 • 300 créditos/mês</p>
+    <button style="background:#ef4444;color:white;padding:14px 32px;border:none;border-radius:12px;margin-top:20px;">Cancelar assinatura</button>
+  </div>
+
+  <div class="card">
+    <h2>Upgrade para Premium</h2>
+    <p>Stories ilimitados + voz realista + agendamento direto</p>
+    <a href="checkout.html" style="background:var(--g);color:white;padding:16px 40px;border-radius:12px;display:inline-block;margin-top:15px;font-weight:600;">Fazer upgrade por R$47,90/mês</a>
+  </div>
+</div>
+</body>
+</html>

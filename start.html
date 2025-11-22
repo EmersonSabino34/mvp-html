@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comece agora – StoryMagic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --p: #7C3AED; --pd: #6D28D9; --g: #10B981; --dark: #111; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Inter', sans-serif; background: linear-gradient(135deg, #f8f0ff 0%, #f3e8ff 100%); min-height:100vh; display:flex; align-items:center; justify-content:center; }
+    .card-login { background:white; padding:60px 50px; border-radius:24px; box-shadow:0 25px 80px rgba(124,58,237,0.2); text-align:center; max-width:420px; width:90%; }
+    .logo { font-size:42px; font-weight:900; background:linear-gradient(90deg,var(--p),#A78BFA); -webkit-background-clip:text; -webkit-text-fill-color:transparent; margin-bottom:30px; }
+    .btn-google { background:#fff; border:2px solid #ddd; padding:16px; border-radius:16px; font-weight:600; display:flex; align-items:center; justify-content:center; gap:12px; margin:20px 0; font-size:18px; }
+    .btn-apple { background:#000; color:white; padding:18px; border-radius:16px; font-weight:600; font-size:18px; }
+    .btn-p { background:var(--p); color:white; padding:18px; border-radius:16px; font-weight:600; font-size:18px; margin-top:20px; }
+  </style>
+</head>
+<body>
+  <div class="card-login">
+    <div class="logo">StoryMagic</div>
+    <h1 style="font-size:36px; margin-bottom:16px;">Bem-vindo!</h1>
+    <p style="color:#555; margin-bottom:30px; font-size:18px;">Crie sua conta em 3 segundos e ganhe 5 stories grátis</p>
+    
+    <button class="btn-google">
+      <img src="https://www.google.com/favicon.ico" width="24"> Continuar com Google
+    </button>
+    <button class="btn-apple">
+      <svg width="24" viewBox="0 0 24 24" fill="white"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91 1.95.19 3.4 1.68 3.4 3.39 0 .93-.26 1.91-.77 2.95-.77 1.59-1.79 1.61-1.75 2.31.62.97 1.34 1.93 2.2 2.91zM12.16 3.5c-.42.95-.94 1.77-1.63 2.33-.68.55-1.5.96-2.4.86.06-1.02.52-2.09 1.23-2.83.71-.74 1.61-1.3 2.57-1.36.03 1 .01 1.99-.77 2z"/></svg>
+      Continuar com Apple
+    </button>
+    
+    <div style="margin:30px 0; color:#aaa;">ou</div>
+    
+    <button class="btn-p" onclick="location.href='dashboard.html'">
+      Entrar com e-mail e senha
+    </button>
+    
+    <p style="margin-top:30px; font-size:14px; color:#777;">
+      Ao continuar você aceita nossos <a href="#" style="color:var(--p);">Termos</a> e <a href="#" style="color:var(--p);">Privacidade</a>
+    </p>
+  </div>
+</body>
+</html>

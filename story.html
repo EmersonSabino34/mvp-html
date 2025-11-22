@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StoryMagic — Stories Profissionais com IA em 30 segundos</title>
+  <meta name="description" content="Crie 15 stories profissionais por dia em 30 segundos com IA. Plano grátis + R$23,90/mês"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #7C3AED;
+      --primary-dark: #6D28D9;
+      --green: #10B981;
+      --gray-900: #111111;
+      --gray-800: #1F2937;
+      --gray-100: #F3F4F6;
+      --gray-200: #E5E7EB;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #fff;
+      color: var(--gray-900);
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+    .container { width: 90%; max-width: 1280px; margin: 0 auto; }
+    header {
+      padding: 20px 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      border-bottom: 1px solid var(--gray-200);
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 900;
+      background: linear-gradient(90deg, var(--primary), #A78BFA);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .btn {
+      padding: 12px 28px;
+      border-radius: 12px;
+      font-weight: 600;
+      transition: all 0.3s;
+      display: inline-block;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: white;
+    }
+    .btn-primary:hover { background: var(--primary-dark); transform: translateY(-3px); }
+    .btn-outline {
+      border: 2px solid var(--primary);
+      color: var(--primary);
+    }
+    .btn-outline:hover { background: var(--primary); color: white; }
+
+    /* HERO */
+    .hero {
+      padding: 160px 0 100px;
+      text-align: center;
+      background: linear-gradient(135deg, #f8f0ff 0%, #f3e8ff 100%);
+    }
+    .hero h1 {
+      font-size: 52px;
+      font-weight: 900;
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: 24px;
+      color: var(--gray-800);
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero-buttons .btn {
+      font-size: 20px;
+      padding: 18px 40px;
+      margin: 0 10px;
+    }
+    .badge {
+      display: inline-block;
+      background: #10B981;
+      color: white;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    /* SECTIONS */
+    section { padding: 100px 0; }
+    .section-title {
+      text-align: center;
+      font-size: 42px;
+      font-weight: 900;
+      margin-bottom: 60px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: 0.3s;
+    }
+    .card:hover { transform: translateY(-10px); }
+    .card h3 { font-size: 24px; margin: 20px 0 15px; }
+    .price {
+      font-size: 48px;
+      font-weight: 900;
+      color: var(--primary);
+    }
+    .price small { font-size: 18px; color: var(--gray-800); }
+    .features { text-align: left; margin: 20px 0; }
+    .features li {
+      margin: 12px 0;
+      display: flex;
+      align-items: center;
+    }
+    .features li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    .most-popular {
+      border: 3px solid var(--primary);
+      position: relative;
+    }
+    .most-popular::after {
+      content: "MAIS VENDIDO";
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--primary);
+      color: white;
+      padding: 6px 20px;
+      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--gray-900);
+      color: white;
+      padding: 80px 0 30px;
+      text-align: center;
+    }
+    footer a { color: #A78BFA; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 38px; }
+      .hero p { font-size: 20px; }
+      .hero-buttons .btn { display: block; margin: 15px auto; width: 90%; }
+      .grid-3 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <div class="logo">StoryMagic</div>
+      <div>
+        <a href="#precos" class="btn btn-outline">Preços</a>
+        <a href="/app" class="btn btn-primary" style="margin-left:12px;">Entrar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <span class="badge">Mais de 28.000 empreendedores já usam</span>
+      <h1>Crie 15 stories PROFISSIONAIS por dia em apenas 30 segundos com IA</h1>
+      <p>Sem saber design. Sem perder horas. Templates virais prontos + inteligência artificial que entende seu negócio.</p>
+      <div class="hero-buttons">
+        <a href="/start" class="btn btn-primary">Começar agora — É GRÁTIS</a>
+        <a href="#exemplos" class="btn btn-outline">Ver exemplos reais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXEMPLOS -->
+  <section id="exemplos">
+    <div class="container">
+      <h2 class="section-title">Stories que já geraram milhões em vendas</h2>
+      <div class="grid-3">
+        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400" alt="Story loja de roupa" style="border-radius:16px; width:100%;">
+        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=400" alt="Story coach" style="border-radius:16px; width:100%;">
+        <img src="https://images.unsplash.com/photo-1556742111-a301076d9d41?w=400" alt="Story nutricionista" style="border-radius:16px; width:100%;">
+      </div>
+    </div>
+  </section>
+
+  <!-- PREÇOS -->
+  <section id="precos" style="background:#f8f0ff;">
+    <div class="container">
+      <h2 class="section-title">Escolha seu plano e decole hoje</h2>
+      <div class="grid-3">
+
+        <!-- GRÁTIS -->
+        <div class="card">
+          <h3>Grátis</h3>
+          <p class="price">R$0 <small>/mês</small></p>
+          <ul class="features">
+            <li>5 stories por mês</li>
+            <li>Marca d’água StoryMagic</li>
+            <li>50 templates básicos</li>
+          </ul>
+          <a href="/start" class="btn btn-outline" style="width:100%; margin-top:20px;">Testar grátis</a>
+        </div>
+
+        <!-- PRO -->
+        <div class="card most-popular">
+          <h3>Pro</h3>
+          <p class="price">R$23,90 <small>/mês</small></p>
+          <p style="font-size:14px;color:#6B7280;margin:10px 0;">ou R$197/ano (economize R$90)</p>
+          <ul class="features">
+            <li>300 stories por mês</li>
+            <li>Sem marca d’água</li>
+            <li>500 templates virais</li>
+            <li>Suporte por WhatsApp</li>
+          </ul>
+          <a href="/checkout-pro" class="btn btn-primary" style="width:100%; margin-top:20px;">Começar agora</a>
+        </div>
+
+        <!-- PREMIUM -->
+        <div class="card">
+          <h3>Premium</h3>
+          <p class="price">R$47,90 <small>/mês</small></p>
+          <p style="font-size:14px;color:#6B7280;margin:10px 0;">ou R$397/ano (economize R$177)</p>
+          <ul class="features">
+            <li>Stories ilimitados</li>
+            <li>Remover fundo automático</li>
+            <li>Voz sintética realista</li>
+            <li>Agendamento direto no Instagram</li>
+            <li>+2.000 templates exclusivos</li>
+            <li>Suporte prioritário 24h</li>
+          </ul>
+          <a href="/checkout-premium" class="btn btn-primary" style="width:100%; margin-top:20px;">Quero o Premium</a>
+        </div>
+
+      </div>
+      <p style="text-align:center; margin-top:50px; font-size:18px;">
+        Garantia de 7 dias ou seu dinheiro de volta em 7 dias · Cancele quando quiser
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="logo" style="color:white; margin-bottom:30px; font-size:36px;">StoryMagic</div>
+      <p>Feito com ♥ no Brasil<br/>
+      <a href="#">Termos de uso</a> · <a href="#">Política de privacidade</a> · 
+      <a href="https://wa.me/5511999999999">Suporte WhatsApp</a></p>
+      <p style="margin-top:30px; opacity:0.6;">© 2025 StoryMagic. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meus Stories – StoryMagic</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>:root{--p:#7C3AED;--g:#10B981}body{font-family:'Inter',sans-serif;background:#f8f9fc;display:flex;min-height:100vh}
+.sidebar{width:280px;background:var(--p);color:white;padding:30px 20px;position:fixed;height:100%}.sidebar .logo{font-size:32px;font-weight:900;margin-bottom:50px}
+.sidebar a{display:block;padding:14px 20px;border-radius:12px;margin:8px 0;color:rgba(255,255,255,0.9)}
+.sidebar a:hover,.sidebar a.active{background:rgba(255,255,255,0.2)}
+.main{margin-left:280px;padding:40px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px}
+.item{border-radius:16px;overflow:hidden;box-shadow:0 8px25px rgba(0,0,0,0.1);position:relative}
+.item img{width:100%}</style>
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo">StoryMagic</div>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="novo-story.html">+ Novo Story</a>
+  <a href="biblioteca.html">Biblioteca</a>
+  <a href="meus-stories.html" class="active">Meus Stories</a>
+  <a href="perfil.html">Perfil</a>
+</div>
+
+<div class="main">
+  <h1 style="font-size:42px;">Seus stories criados (1.247)</h1>
+  <p style="color:#555;font-size:18px;margin:20px 0 40px">Clique para baixar novamente ou compartilhar</p>
+
+  <div class="grid">
+    <div class="item"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400"><p style="padding:12px;background:#0008;color:white;">12/nov • Oferta curso</p></div>
+    <div class="item"><img src="https://images.unsplash.com/photo-1556742111-a301076d9d41?w=400"><p style="padding:12px;background:#0008;color:white;">11/nov • Depoimento aluna</p></div>
+    <!-- mais itens -->
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novo Story – StoryMagic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --p: #7C3AED; --g: #10B981; }
+    body { font-family: 'Inter', sans-serif; background:#f8f9fc; display:flex; min-height:100vh; }
+    .sidebar { width:280px; background:var(--p); color:white; padding:30px 20px; position:fixed; height:100%; }
+    .sidebar .logo { font-size:32px; font-weight:900; margin-bottom:50px; }
+    .sidebar a { display:block; padding:14px 20px; border-radius:12px; margin:8px 0; color:rgba(255,255,255,0.9); }
+    .sidebar a:hover, .sidebar a.active { background:rgba(255,255,255,0.2); }
+    .main { margin-left:280px; padding:40px; }
+    textarea { width:100%; height:180px; padding:24px; border-radius:16px; border:2px solid #ddd; font-size:18px; margin:30px 0; }
+    .templates { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:20px; margin-top:40px; }
+    .temp { border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.1); cursor:pointer; transition:0.3s; }
+    .temp:hover { transform:scale(1.05); }
+    .btn-g { background:var(--g); color:white; padding:20px 40px; border:none; border-radius:16px; font-size:20px; font-weight:700; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">StoryMagic</div>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="novo-story.html" class="active">+ Novo Story</a>
+    <a href="biblioteca.html">Biblioteca</a>
+    <a href="meus-stories.html">Meus Stories</a>
+    <a href="perfil.html">Perfil</a>
+  </div>
+
+  <div class="main">
+    <h1 style="font-size:42px;">Crie seu story em 1 clique</h1>
+    <p style="font-size:20px; color:#555; margin:20px 0 40px;">
+      Cole o texto, fale no microfone ou escolha um template abaixo → a IA faz o resto em 12 segundos
+    </p>
+
+    <textarea placeholder="Ex: Quero vender meu curso de emagrecimento com oferta de R$97 hoje só..."></textarea>
+
+    <button class="btn-g" style="width:100%;">GERAR 15 STORIES MÁGICOS AGORA</button>
+
+    <h2 style="margin:50px 0 30px;">Ou escolha um template viral pronto</h2>
+    <div class="templates">
+      <div class="temp"><img src="https://images.unsplash.com/photo-1611162617213-b2e2d8bef5c1?w=400" style="width:100%;"><p style="padding:12px; background:#000000aa; color:white; text-align:center;">Oferta 24h</p></div>
+      <div class="temp"><img src="https://images.unsplash.com/photo-1556742111-a301076d9d41?w=400" style="width:100%;"><p style="padding:12px; background:#000000aa; color:white; text-align:center;">Depoimento Real</p></div>
+      <div class="temp"><img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=400" style="width:100%;"><p style="padding:12px; background:#000000aa; color:white; text-align:center;">Antes x Depois</p></div>
+      <div class="temp"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400" style="width:100%;"><p style="padding:12px; background:#000000aa; color:white; text-align:center;">Bastidores</p></div>
+    </div>
+  </div>
+</body>
+</html>

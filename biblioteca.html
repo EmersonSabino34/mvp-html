@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biblioteca – StoryMagic</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+<style>:root{--p:#7C3AED;--g:#10B981}body{font-family:'Inter',sans-serif;background:#f8f9fc;display:flex;min-height:100vh}
+.sidebar{width:280px;background:var(--p);color:white;padding:30px 20px;position:fixed;height:100%}
+.sidebar .logo{font-size:32px;font-weight:900;margin-bottom:50px}
+.sidebar a{display:block;padding:14px 20px;border-radius:12px;margin:8px 0;color:rgba(255,255,255,0.9)}
+.sidebar a:hover,.sidebar a.active{background:rgba(255,255,255,0.2)}
+.main{margin-left:280px;padding:40px}
+.grid-templates{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px}
+.temp{border-radius:16px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1);position:relative}
+.temp img{width:100%;display:block}
+.temp p{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.7);color:white;padding:12px;text-align:center;font-weight:600}
+</style>
+</head>
+<body>
+<div class="sidebar">
+  <div class="logo">StoryMagic</div>
+  <a href="dashboard.html">Dashboard</a>
+  <a href="novo-story.html">+ Novo Story</a>
+  <a href="biblioteca.html" class="active">Biblioteca</a>
+  <a href="meus-stories.html">Meus Stories</a>
+  <a href="perfil.html">Perfil</a>
+</div>
+
+<div class="main">
+  <h1 style="font-size:42px;margin-bottom:20px">+2.147 templates virais</h1>
+  <p style="font-size:20px;color:#555;margin-bottom:40px">Filtre por: <strong>Vendas · Autoridade · Engajamento · Ofertas · Carrossel</strong></p>
+
+  <div class="grid-templates">
+    <div class="temp"><img src="https://images.unsplash.com/photo-1611162617213-9b2e2d8bef5c1?w=500"><p>Promoção 48h</p></div>
+    <div class="temp"><img src="https://images.unsplash.com/photo-1556742111-a301076d9d41?w=500"><p>Prova Social</p></div>
+    <div class="temp"><img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=500"><p>Transformação</p></div>
+    <div class="temp"><img src="https://images.unsplash.com/photo-1516321310766-78dd2d8b0e7b?w=500"><p>Enquete</p></div>
+    <!-- repita quantos quiser -->
+  </div>
+</div>
+</body>
+</html>

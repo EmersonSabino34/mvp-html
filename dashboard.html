@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard – StoryMagic</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    :root { --p: #7C3AED; --g: #10B981; --dark: #111; }
+    body { font-family: 'Inter', sans-serif; background:#f8f9fc; display:flex; min-height:100vh; }
+    .sidebar { width:280px; background:var(--p); color:white; padding:30px 20px; position:fixed; height:100%; }
+    .sidebar .logo { font-size:32px; font-weight:900; margin-bottom:50px; }
+    .sidebar a { display:block; padding:14px 20px; border-radius:12px; margin:8px 0; transition:0.3s; color:rgba(255,255,255,0.9); }
+    .sidebar a:hover, .sidebar a.active { background:rgba(255,255,255,0.2); }
+    .main { margin-left:280px; padding:40px; width:100%; }
+    .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:40px; }
+    .card-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:gap 30px; }
+    .card { background:white; border-radius:16px; padding:30px; box-shadow:0 10px 30px rgba(0,0,0,0.05); }
+    .btn-float { position:fixed; bottom:30px; right:30px; width:70px; height:70px; background:var(--g); color:white; border-radius:50%; font-size:32px; box-shadow:0 10px 30px rgba(16,185,129,0.4); display:flex; align-items:center; justify-content:center; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">StoryMagic</div>
+    <a href="dashboard.html" class="active">Dashboard</a>
+    <a href="novo-story.html">+ Novo Story</a>
+    <a href="biblioteca.html">Biblioteca de Templates</a>
+    <a href="meus-stories.html">Meus Stories</a>
+    <a href="perfil.html">Perfil & Assinatura</a>
+    <a href="index.html">Sair</a>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <h1>Olá! Você tem <strong style="color:var(--g);">127 créditos</strong> restantes</h1>
+      <button class="btn-p" style="padding:12px 28px; border-radius:12px; border:none; color:white; font-weight:600;">Fazer upgrade</button>
+    </div>
+
+    <h2 style="margin-bottom:30px;">Templates do dia (os que mais convertem agora)</h2>
+    <div class="card-grid">
+      <div class="card"><img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600" style="border-radius:12px; width:100%;"><p style="margin-top:15px; font-weight:600;">Oferta Relâmpago 24h</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1556742111-a301076d9d41?w=600" style="border-radius:12px; width:100%;"><p style="margin-top:15px; font-weight:600;">Depoimento + Prova</p></div>
+      <div class="card"><img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=600" style="border-radius:12px; width:100%;"><p style="margin-top:15px; font-weight:600;">Autoridade do Dia</p></div>
+    </div>
+
+    <a href="novo-story.html" class="btn-float">+</a>
+  </div>
+</body>
+</html>
