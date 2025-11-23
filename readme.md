@@ -1,4 +1,4 @@
-# StoryMagic – SaaS de Stories com IA (2025)
+# StoryMagic – SaaS mini de Stories com IA (2025)
 
 **Stories profissionais do Instagram em 30 segundos – 100% automático com inteligência artificial**  
 Site demo (aberto): https://storymagic-demo.netlify.app  
