@@ -7,7 +7,6 @@ Site demo (aberto): https://storymagic-demo.netlify.app
 ## O produto em 1 frase
 Ferramenta que transforma qualquer texto (ou voz) em 10–15 stories ou carrosséis virais do Instagram em menos de 30 segundos – perfeita para lojistas, coaches, nutricionistas, infoprodutores e afiliados.
 
-
 ## Preços (já validados no Brasil 2025)
 | Plano    | Mensal     | Anual           | Principais recursos                              | Conversão real |
 |----------|------------|-----------------|---------------------------------------------------|-----------------|
