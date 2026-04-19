@@ -19,6 +19,7 @@ Margem bruta média: ~90%
 ## Mapa completo do produto (fluxo do usuário)
 
 ```mermaid
+
 graph TD
     A[Landing Page<br/>index.html] --> B[Cadastro 3s<br/>start.html]
     B --> C[Dashboard<br/>dashboard.html]
